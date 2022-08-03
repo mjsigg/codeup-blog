@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+<h1>Welcome to our Spring Blog!</h1>
+
+<span th:text="${name}?: 'Visitor'">World</span>!</blog>
+
+<div th:insert="fragment.html :: fraggy"></div>
+
+</body>
+
+</html>
