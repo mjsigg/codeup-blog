@@ -20,4 +20,6 @@ public class NewInfoController {
         return "/new-info";
     }
 
+
+
 }

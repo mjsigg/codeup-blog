@@ -6,11 +6,15 @@
 </head>
 <body>
 
+<nav th:insert="navbar.html :: navbar"></nav>
+
 <h1>Welcome to our Spring Blog!</h1>
 
-<span th:text="${name}?: 'Visitor'">World</span>!</blog>
+<span th:text="${name}?: 'Visitor'">World</span>!
 
 <div th:insert="fragment.html :: fraggy"></div>
+
+
 
 </body>
 

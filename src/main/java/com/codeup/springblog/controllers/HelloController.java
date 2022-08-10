@@ -35,14 +35,9 @@ public class HelloController {
     public String reportNumber(@PathVariable int num) {
         String intro =  String.format("Here are some truths of the number %d.", num);
         String isEven = String.format("The number %d is even: %b.", num, num % 2 == 0);
-        String numSquared = String.format("The number %d squared is $d.", num, (int) (Math.pow(num,2)));
+        String numSquared = String.format("The number %d squared is %d.", num, (int) (Math.pow(num,2)));
         return String.format("<h3> %s <li> %s </li> <li> %s </li> <li> %s </li> </h3> ",intro,isEven,numSquared,fizzBuzzEvaluation(num));
 
     }
-
-
-
-
-
 
 }

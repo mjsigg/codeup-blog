@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--//Form Model Binding -->
+<form th:action="@{/posts/create}" th:method="post" th:object="${posts}">
+
+    <label for="title">Name</label>
+    <input th:field="*{name}" type="text" name="name" id="title">
+
+    <label for="body">Body</label>
+    <input th:field="*{body}" type="text" name="body" id="body">
+
+    <input type="hidden" th:field="*{id}">
+    <input type="submit" value="Submit">
+
+
+</form>
+
+<h1></h1>
+
+</body>
+</html>

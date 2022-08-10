@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+<!--    <title th:insert="/posts/navbar.html:: navbar-title">Index</title>-->
+</head>
+<body>
+
+<nav th:replace="navbar.html :: navbar"> something</nav>
+<h1></h1>
+<h1>is it working</h1>
+<h2>seems like it</h2>
+
+<!--<h2 th:each="post : ${posts}">-->
+<!--    <a th:href="@{/posts/{id} (id = ${post.id})}"><h1 th:text="${post.name}"></h1></a>-->
+<!--    <p th:text="${post.body}"></p>-->
+<!--</h2>-->
+
+</body>
+</html>
